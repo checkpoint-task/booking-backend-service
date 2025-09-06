@@ -1,0 +1,15 @@
+{
+    "morgan": {
+        "type": "dev",
+        "stream": "console",
+        "stream_auth": "console"
+    },
+    "accounting": {
+        "salt_rounds":  10,
+        "expired_in": "1h" 
+    },
+    "limitation": {
+        "user_requests_count": 10,
+        "user_requests_time": "1m" 
+    }
+}

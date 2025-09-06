@@ -1,0 +1,20 @@
+{
+    "morgan" : {
+        "type": "combined",
+        "stream": "all_logs.txt",
+        "stream_auth": "auth_logs.txt",
+        "rotation": {
+            "size": "10M",
+            "interval": "1d",
+            "path": "logs"
+        }
+    },
+    "accounting": {
+        "salt_rounds":  10,
+        "expired_in": "1h" 
+    },
+    "limitation": {
+        "user_requests_count": 10,
+        "user_requests_time": "1m" 
+    }
+}
