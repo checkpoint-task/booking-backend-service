@@ -1,5 +1,5 @@
 import { rateLimit, ipKeyGenerator } from "express-rate-limit";
-import convertTimeStrToInt from "../../utils/convertTimeStrToInt.js";
+import convertTimeStrToInt from "../utils/convertTimeStrToInt.js";
 import config from "config";
 
 export const userRateLimiter = rateLimit({

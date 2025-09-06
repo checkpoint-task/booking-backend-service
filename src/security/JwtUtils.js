@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import config from "config";
-import convertTimeStrToInt from "../../utils/convertTimeStrToInt.js";
+import convertTimeStrToInt from "../utils/convertTimeStrToInt.js";
 
 export default class JwtUtils {
 
