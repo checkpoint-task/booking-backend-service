@@ -63,7 +63,7 @@ Response 201:
 # 3. Database Schema
 ![Database Schema](./assets/booking-db-erd.png)
 ## SQL 
-CREATE TABLE IF NOT EXISTS "bookings" (
+- CREATE TABLE IF NOT EXISTS "bookings" (
 	"booking_id"	varchar(255),
 	"user_id"	varchar(255) NOT NULL,
 	"room_id"	varchar(255) NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS "bookings" (
 	FOREIGN KEY("user_id") REFERENCES "users"("user_id") on delete CASCADE,
 	CHECK("end_date" > "start_date")
 );
-CREATE TABLE IF NOT EXISTS "rooms" (
+- CREATE TABLE IF NOT EXISTS "rooms" (
 	"room_id"	varchar(255),
 	"name"	varchar(100) NOT NULL,
 	"location"	varchar(100) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS "rooms" (
 	"created_at"	datetime DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY("room_id")
 );
-CREATE TABLE IF NOT EXISTS "users" (
+- CREATE TABLE IF NOT EXISTS "users" (
 	"user_id"	char(36),
 	"email"	varchar(255) NOT NULL,
 	"password_hash"	varchar(255) NOT NULL,
