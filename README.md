@@ -1,5 +1,5 @@
 # 1. High-Level Architecture
-![High-Level Architecture](./assets/Booking-service-HLA.jpgassets)
+![High-Level Architecture](./assets/Booking-service-HLA.jpg)
 
 # 2. API Design
 ## Authentication & User Management
